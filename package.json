@@ -1,0 +1,22 @@
+{
+  "name": "mernstack-api",
+  "version": "1.0.0",
+  "description": "I will create a RESTful API from scratch with Node.js, Express, MongoDB and Mongoose.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./backend/app.js",
+    "server": "nodemon ./backend/app.js"
+  },
+  "keywords": [],
+  "author": "Abdellah El Azraoui",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.6.5",
+    "nodemon": "^2.0.20"
+  }
+}
