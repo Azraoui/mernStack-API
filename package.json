@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node ./backend/app.js",
-    "server": "nodemon ./backend/app.js"
+    "dev": "nodemon ./backend/app.js"
   },
   "keywords": [],
   "author": "Abdellah El Azraoui",
@@ -16,6 +16,7 @@
     "colors": "^1.4.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
     "mongoose": "^6.6.5",
     "nodemon": "^2.0.20"
   }

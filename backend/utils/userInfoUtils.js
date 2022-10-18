@@ -7,8 +7,8 @@ export async function saveUserInfo(req, userInfo)
             userInfo.address = req.body.address
             return resolve(userInfo)
         }
-        else{
-            return reject(true)
+        else {
+            return reject("Empty paramters")
         }
     });
 }
