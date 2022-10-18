@@ -6,10 +6,15 @@ import express from 'express'
 // import routers
 import appRouter from './routers/appRouter.js'
 
+// import db.js to connect to databases
+import {connectDB} from './config/db.js'
 
 // set env
 dotenv.config();
 const port = process.env.PORT || 5000;
+
+// connect to db
+connectDB();
 
 // init express
 const app = express()
