@@ -2,7 +2,6 @@
 import * as dotenv from 'dotenv'
 import colors from 'colors'
 import express from 'express'
-import bodyParser from 'body-parser'
 
 // import routers
 import appRouter from './routers/appRouter.js'
@@ -16,8 +15,11 @@ const port = process.env.PORT || 5000;
 const app = express()
 
 // midlware
-app.use(bodyParser.json());
-app.use("/api/test", appRouter)
+app.use(express.json());
+app.use(express.urlencoded({
+    
+}))
+app.use("/api/profile", appRouter)
 
 // server start listening
 app.listen(port, () => {

@@ -1,12 +1,12 @@
 import express from 'express'
-import * as appController from '../controllers/appController.js'
+import * as appController from '../controller/appController.js'
 
 // init router
 const router = express.Router()
 
-router.get('/', appController.getHomePage)
-router.post('/', appController.setHomePage)
-router.put('/:id', appController.updateHomePage)
-router.delete('/:id', appController.deleteHomePage)
+router.get('/', appController.getUserInfo)
+router.post('/', appController.setUserInfo)
+router.put('/:id', appController.updateUserInfo)
+router.delete('/:id', appController.deleteUserInfo)
 
 export default router
